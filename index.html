@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- **************************************
+     Anna O.      w1627858      12.12.2018 
+     **************************************
+	 For final project I used images from unsplash.com and pixabay.com.
+	 For all pages used letterpress effect for the logo text.
+	 In this webpage implemented inline style for p element of frstletter services section.
+	 -->
+<html lang="en">
+<head>
+<!-- Displayed on search engine results pages -->
+<title>OptiVi Eye Care :: Main</title>
+<meta charset="UTF-8">
+<!-- Define a description of the web page: -->
+<meta name="description" content="Optomentrist doctor, schedule an appointment. Shop online eyeglasses and sunglasses">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="optometrist,eye doctor,eyeglasses,sunglasses">
+<!-- Setting the viewport to make the website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Links on external stylesheets and fonts -->
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!-- Internal style sheet -->
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Montserrat", sans-serif;}
+.mySlides {display:none;}
+.textSlides {display:none;}
+.w3-tag, .fa {cursor:pointer;}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+</head>
+<body>
+<!-- NAVIGATION | Pages within the site do not open in new window-->
+<div class="w3-top"> <!-- stick the menu to the bottom-->
+  <div class="w3-bar w3-blue-grey">
+	<span class="branding w3-bar-item w3-mobile">OptiVi Eye Care Optometry</span> <!-- branding for style text-->
+	<span class="w3-right w3-mobile"></span>
+	<a href="contacts.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-none w3-border-white w3-bottombar w3-hover-border-red">Hours&#38;Location</a>
+	<a href="eyeglasses.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-none w3-border-white w3-bottombar w3-hover-border-red">Eyeglasses</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-right w3-hover-none w3-border-white w3-bottombar w3-hover-border-red">Home</a>
+  </div>
+</div>
+<!-- SHOWCASE -->
+	 <section class="showcase w3-mobile">
+		<div class="w3-container w3-center">
+			    <div class="w3-display-container mySlides w3-animate-fading" style="display: block;">
+				<img src="images/hero.jpg" height="350" width="960" alt="women in sunglasses" style="width:100%">
+				<div class="w3-display-topleft w3-container w3-padding-32">
+				<span class="w3-red w3-padding-large w3-animate-bottom">SCHEDULE APPOINTMENT</span>
+				</div>
+				</div>
+			<div class="w3-display-container mySlides w3-animate-fading" style="display: none;">
+			<img src="images/hero2.jpg" height="350" width="960" alt="women is working on the computer" style="width:100%">
+			<div class="w3-display-bottomleft w3-container w3-padding-32">
+			<span class="w3-red w3-padding-large w3-animate-bottom">LEARN MORE</span>
+			</div>
+			</div>
+				<div class="w3-display-container mySlides w3-animate-fading" style="display: none;">
+				<img src="images/hero3.jpg" height="350" width="960" alt="women near the ocean" style="width:100%">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				<span class="w3-red w3-padding-large w3-animate-bottom">SHOP NOW</span>
+				</div>
+				</div>
+
+<!-- Slideshow next/previous buttons -->
+     <div class="w3-container w3-blue-grey w3-padding w3-xlarge">
+		<div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+		<div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+		<div class="w3-center">
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		</div>
+    </div>
+	</div>
+</section>
+<!-- Slideshow of text --> 
+  <section class="section w3-light-grey w3-hower-opacity">
+	<div class="w3-container w3-center">
+		 <div class="w3-row">
+			<h4>What Our Patients Have to Say...</h4>
+				<!--<div class="w3-display-container w3-light-grey textSlides 3-animate-fading" style="display:block;"> -->
+				<div class="w3-col m3">
+				<!-- star rating -->
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<p><i>"Dr. Doe is awesome, made my eye exam seem like a walk in the park! Very smooth hands and very professional! Highly recommend if you are in need of Eye Doctor.”</i><br>- Jennifer P.</p>
+				</div>
+				<div class="w3-col m3">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<p><i>"Fantastic service and clean comfortable environment. Highly recommend!”</i><br>- Andrea V.</p>
+				</div>
+				<div class="w3-col m3 3-animate-fading">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<p><i>"Quickly and inexpensively found a model that was not found anywhere else. They have a wide variety of good frames. Definitely recommend!”</i><br>- Aaron J.</p>
+				</div>
+				<div class="w3-col m3 3-animate-fading">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<p><i>"Dr. Ross was very friendly while my extensive eye exam and I left feeling understood and confident. Informative every step of the way.”<br>- George C.</i></p>
+				</div>
+	</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+	<div class="w3-row-padding">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 w3-hover-border-red">Meet Our Doctors</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/doc.png" height="250" width="250" alt="Mike" style="width:60%">
+        <div class="w3-container">
+          <h3>Dr. Mike Ross</h3>
+          <p class="w3-opacity">O.D.</p>
+          <p>Dr. Ross goal is to provide the highest quality care possible to his patients and the community in general. He received his Bachelor of Science degree from Brigham Young University.</p>
+          <p><button class="w3-button w3-red w3-block">Schedule Appointment</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/doc1.png" height="250" width="250" alt="Jane" style="width:58.5%">
+        <div class="w3-container">
+          <h3>Dr. Jane Doe</h3>
+          <p class="w3-opacity">M.D., Ph.D.</p>
+          <p>Dr. Doe is a board certified surgeon and a diplomat of the American Academy of Ophthalmology. She earned her degree at The University of California Berkeley Graduated top of class.</p>
+          <p><button class="w3-button w3-red w3-block">Schedule Appointment</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/doc2.png" height="250" width="250" alt="John Morris" style="width:60%">
+        <div class="w3-container">
+          <h3>Dr. John Morris</h3>
+          <p class="w3-opacity">M.D.</p>
+          <p>Dr.Morris earned his degree at the University of California. He provides comprehensive eye examinations for both pediatric and adult patients and enjoys every minute of patient care.</p>
+          <p><button class="w3-button w3-red w3-block">Schedule Appointment</button></p>
+        </div>
+      </div>
+    </div>
+	</div>
+  </section>
+  <!-- SERVICES HEADING-->
+  <section class="section w3-blue-grey w3-hower-opacity">
+	<div class="w3-container w3-center">
+	<h1 class="w3-text-shadow">Eye Care Services</h1>
+	<p>The full spectrum of eye care is offered to clients of all ages, from children to older adults: vision tests, laser vision correction, immediate attention for eye emergencies and so much more. After completing  the evaluation of your eye health, our doctors will review the results and discusses treatments with you.</p>
+	</div>
+</section>
+  <!-- SERVICES -->
+<section class="frstletter section w3-light-grey">
+	<div class="w3-container w3-center">
+		<div class="w3-row">
+			<div class="w3-col m3">
+				<img src="images/red_icon.png" height="50" width="50" alt="Icon" style="width:40%">
+				<h3>Comprehensive Eye Exams</h3>
+				<p>Learn more about what problems can be spotted with an eye exam, what’s involved in a comprehensive exam, and special considerations for kids and contacts. Regularly scheduled eye exams are critical for achieving and maintaining healthy eyes. </p>
+			</div>
+			<div class="w3-col m3">
+				<img src="images/red_icon.png" height="50" width="50" alt="Icon" style="width:40%">
+				<h3>Dry Eye Treatment</h3>
+				<p>Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated. Did you know your optometrist can help you with red eyes, pink eye, or sore eyes?  You don't have to go to your primary care physician for help with these issues.</p>
+			</div>
+			<div class="w3-col m3">
+				<img src="images/red_icon.png" height="50" width="50" alt="Icon" style="width:40%">
+				<h3>Pediatric Eyecare</h3>
+				<p>Good vision is vital for physical and emotional development in kids.  Many vision problems are only correctable in childhood. To ensure that your children have the visual resources they need to grow and develop normally, their eyes and vision should be checked by an eye doctor at certain stages of their development.</p>
+			</div>
+			<div class="w3-col m3">
+				<img src="images/red_icon.png" height="50" width="50" alt="Icon" style="width:40%">
+				<h3>Additional Services</h3>
+				<p>Our commitment to your complete eye care experience includes offering additional products and services, including advanced premium intraocular lenses and Latisse. Also, we provide management of Ocular Diseases, including Glaucoma, Macular Degeneration, and Cataracts.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+  <!-- INSURANCE -->
+<section class="section">
+	<div class="w3-container">
+		<div class="w3-row-padding">
+			<div class="w3-col m5">   <!-- grid 5 colums for image -->
+				<img src="images/3.jpg" height="350" width="350" alt="Two women">
+				</div>
+				<div class="w3-col m7"> <!-- grid 7 colums for text -->
+				<button onclick="accFunction('insurance')" class="w3-button w3-blue-grey w3-block w3-left-align w3-padding-large">
+					Insurance Information</button>
+					<div class="w3-container w3-show">
+					  <p>The vision insurance is commonly used to describe health and wellness plans designed to reduce your costsand provide routine eye care and prescription eyewear. In most cases, we are able to bill your vision insurance provider directly, thereby saving you time and out-of-pocket expenses for whatever your visit was for: eyeglasses, eyewear, contact lenses, or eye exams. Our staff is extremely knowledgeable and will happily work with you to maximize your insurance reimbursement for all covered procedures. Check with our staff if you have other types of coverage.</p><br>
+					  <span style="font-weight:bold">Medical Plans we Accept:</span><ul><li>Medicare</li>
+								<li>Medi-Cal (River City/Health net/Blue Cross/Molina)</li>
+					  </ul>
+					</div>
+				<button onclick="accFunction('insura')" class="w3-button w3-blue-grey w3-block w3-left-align w3-padding-large">
+					Vision Plans We Accept</button>
+					<div id="insura" class="w3-container w3-hide">
+					     <ul>
+							<li>VSP</li>
+							<li>EyeMed</li>
+							<li>Medical Eye Services (MES)</li>
+							<li>SuperiorVision</li>
+							<li>Health Net Seniority Plus</li>
+							<li>Health Net Vision</li>
+							<li>CompBenefits</li>
+						</ul>
+					</div>
+				<button onclick="accFunction('pay')" class="w3-button w3-blue-grey w3-block w3-left-align w3-padding-large">
+					Types of Payment We Accept</button>
+					<div id="pay" class="w3-container w3-hide">
+					    <ul>
+							<li>Cash</li>
+							<li>Debit Card</li>
+							<li>American Express</li>
+							<li>Master Card</li>
+							<li>Visa</li>
+							<li>Discover</li>
+							<li>Care Credit</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		</div>
+</section>
+<!-- CONTACT HEADING -->
+  <section id="contact" class="section w3-light-grey w3-hower-opacity">
+	<div class="w3-container w3-center">
+	<h1 class="w3-text-shadow">Contact Us</h1></div>
+ </section>
+<!-- CONTACT -->
+  <section class="section w3-blue-grey w3-hower-opacity">
+	<div class="w3-container w3-center">
+		<div class="w3-row">
+			<div class="w3-col m3">
+				<h3>Office Hours</h3>
+				<p><span style="font-weight:bold"> Monday - Thursday: </span><br>
+				<i>8:30 a.m. - 5:30 p.m.</i><br>
+				<i>Closed for lunch from 12:00 - 1:00</i></p>
+				<p><span style="font-weight:bold"> Friday: </span><br>
+				<i>8:30 a.m. - 3:30 p.m.</i><br>
+				<i>Open through lunch</i><br><br><br>
+				Saturday and Evenings By<br>
+				Appointment Only</p>
+			</div>
+			<div class="w3-col m3">
+				<h3>Our Office</h3>
+				<p><p><i class="fa fa-fw fa-map-marker"></i>787 Arden Way Suite 200<br>
+					Sacramento, CA 95825<br><br>
+					<p><i class="fa fa-fw fa-phone"></i><span style="font-weight:bold">Phone: 916-646-5592</span><br></p>
+					<p><i class="fa fa-fw fa-envelope"></i><a href="mailto:info@optivieyecareopt.com">info@optivistudassign.com</a></p>
+			</div>
+			<div class="w3-col m3">
+					<!--The div element for the map -->
+					<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.8324769963797!2d-121.45091948479345!3d38.606725879616555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad7570bfdde1b%3A0xe5ce546333e95f16!2s787+Arden+Way%2C+Sacramento%2C+CA+95815!5e0!3m2!1suk!2sus!4v1544487219979" width="295" height="190" style="border:0" frameborder="0"allowfullscreen></iframe>
+					</div>
+			</div>
+			<div class="w3-col m3">
+				  <a href="#" class="w3-button w3-deep-orange w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+				  <div class="w3-xlarge w3-section">
+				  <p>Follow Us</p>
+					<i class="fa fa-facebook-official w3-hover-opacity"></i>
+					<i class="fa fa-instagram w3-hover-opacity"></i>
+					<i class="fa fa-snapchat w3-hover-opacity"></i>
+					<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+					<i class="fa fa-twitter w3-hover-opacity"></i>
+					<i class="fa fa-linkedin w3-hover-opacity"></i>
+				  </div>
+				  <!-- Newsletter Modal -->
+				  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+					<div id="newsletter" class="w3-modal">
+					  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+						<div class="w3-container w3-white w3-center">
+						  <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button  w3-transparent w3-xxlarge"></i>
+						  <h2 class="w3-wide">NEWSLETTER</h2>
+						  <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+						  <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+						  <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+						</div>
+					  </div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<p>Created by Anna &#124; CISW3042nd8wkFa18 &#124; <a href="mailto:anna@no.com">an@na.com</a></p>
+	<p>This page was last modified on:
+		<script>
+		document.write(document.lastModified);
+		</script>
+	</p>
+	</footer>
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 9000); // Change image every 9 seconds
+}
+// Slideshow images with arrows
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+// Slideshow text 
+/*var textSlideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("textSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    textSlideIndex++;
+    if (textSlideIndex > x.length) {textSlideIndex = 1} 
+    x[textSlideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}*/
+// Accordions -- buttons to open and close the content
+function accFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+</body>
+</html>

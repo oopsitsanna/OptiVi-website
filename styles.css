@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+/*font-family: 'Cabin', sans-serif;
+*/
+/*style logo text*/
+.branding{
+	font-size: 36px;
+	font-family: 'Heebo', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 900;
+	color: white;
+	text-shadow: 0 1px 0 black;
+}
+.showcase{
+	/*background-position: center;*/
+	padding-top: 78px;
+	color: red;/*#eeeeee;*/
+}
+/*style first letter in service section*/
+/*font shown from local server */
+.frstletter p::first-letter {
+	font-family: 'Heebo', sans-serif;
+  font-size: 160%;
+  color: black;
+}
+.section {
+	padding: 5px;
+	margin: 5px;
+	text-overflow: ellipsis;
+}
+.section img{
+	padding: 0;
+	border-style:none;
+	width: 100%;
+}
+/*contact section on contact.html*/
+.cntct {text-align: right;
+		text-overflow: ellipsis;}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/*stars color in patients review section*/
+.checked {
+  color: orange;
+}
+/*google map styles*/
+ #map {
+        width: 100%;
+        height: 200px;
+        background-color: transparent; border-collapse: separate;
+		padding: 5px;
+      }
+/*footer styles*/
+footer {
+	text-align: left;
+	font-size: 0.75em;
+	font-style: italic; 
+	line-height: 0.2em;
+	display: block;
+	padding: 0 0 5px 5px;
+}
+/*responsive design for Cell, Tablet and Desktop*/
+@media only screen and (max-width:600px){
+	body{
+		margin-top:750px;
+	}
+}
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+@media (max-width:1205px){.w3-auto{max-width:95%}}
+@media (min-width:993px){.w3-col.l1{width:8.33333%}.w3-col.l2{width:16.66666%}.w3-col.l3{width:24.99999%}.w3-col.l4{width:33.33333%}
+@media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+/*@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}*/
